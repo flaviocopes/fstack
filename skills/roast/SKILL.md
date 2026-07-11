@@ -16,19 +16,20 @@ Honest pushback on a product idea before anyone writes code. The goal is not to 
 ## Steps
 
 1. Read the idea. Look at any notes, code, or links that exist.
-2. Ask up to **5 hard questions**, all in one message. Pick the ones this idea actually needs:
+2. Ask up to **5 hard questions**. Pick the ones this idea actually needs:
    - Who is the one person who needs this most? Describe them, specifically.
    - What do they do today to solve this, even badly? What does that cost them?
    - What is the strongest evidence someone wants this? Someone who would be upset if it vanished, not someone who said "cool".
    - What is the smallest version someone would pay for this week?
    - How will the first 100 people find it?
-3. **Stop and wait** for answers. A vague answer gets one follow-up push, not three.
-4. Deliver the roast, in three parts:
+3. Every question comes with **answer options**: 3 to 5 specific, plausible answers drawn from this idea, plus a way to type a custom one. Always include the uncomfortable option — "nobody has asked for this yet" must be as easy to pick as the flattering ones. If your environment has a tool for multiple-choice questions, use it. Otherwise letter the options (a, b, c) so the user can answer with letters or free text.
+4. **Stop and wait** for answers. A vague answer gets one follow-up push, not three.
+5. Deliver the roast, in three parts:
    - **What is real.** The parts backed by evidence or a lived problem.
    - **What is wishful.** The parts held up by hope. Say it plainly.
    - **The wedge.** The smallest version worth building. Shippable in days, not months.
-5. End with one verdict line: **Build the wedge**, **Shrink it**, or **Don't build it: [reason]**.
-6. **Stop and ask** what to do next. If building, suggest `/align` with the wedge as the task.
+6. End with one verdict line: **Build the wedge**, **Shrink it**, or **Don't build it: [reason]**.
+7. **Stop and ask** what to do next. If building, suggest `/align` with the wedge as the task.
 
 ## The principles it checks against
 
@@ -45,15 +46,25 @@ Honest pushback on a product idea before anyone writes code. The goal is not to 
 - Flatter. If the idea is weak, say so plainly and say why.
 - Kill ideas for sport. Every roast ends with the best small version, even when the verdict is harsh.
 - Invent numbers, market sizes, or fake research.
+- Ask open questions without options. The user picks or types; they never face a blank page.
 - Start planning or building. The skill ends at the verdict.
 
 ## Example
 
 > User: `/roast` an app where AI generates personalized bedtime stories for kids
 >
-> Agent: "Three questions: 1) Who is the one parent you know who needs this most, and what do they do tonight instead? 2) What evidence do you have that they want this — has anyone asked you for it, or paid for something like it? 3) What is the smallest version someone would pay for this week?"
+> Agent: "Three questions.
 >
-> User: *(answers)*
+> 1) What evidence do you have that parents want this?
+>    a) someone has paid for something like it  b) parents have asked me for it  c) I saw people complaining about bedtime  d) nobody has asked — it just feels right  e) something else
+>
+> 2) What do those parents do tonight instead?
+>    a) make up a story  b) read a book they own  c) YouTube  d) I don't know  e) something else
+>
+> 3) What is the smallest version someone would pay for this week?
+>    a) one themed story pack  b) a printable book  c) the full app with accounts  d) not sure  e) something else"
+>
+> User: *(picks d, a, d)*
 >
 > Agent: "What is real: you have a four-year-old and you invent a story every night. You are the user, and the problem is lived.
 >

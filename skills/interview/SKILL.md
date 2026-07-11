@@ -17,7 +17,7 @@ A structured interview about the product behind the code. The answers go into th
 
 1. Read the project first: README, AGENTS.md or CLAUDE.md, the code. Note what is already answered. Never ask something the project already tells you.
 2. Pick the question areas that fit this project from the list below. Write the actual questions yourself, tuned to this specific product. Do not copy the samples word for word.
-3. Ask in rounds of **3 to 5 questions**. Wait for answers before the next round. Stop after about 4 rounds, or earlier if the user says enough. "I don't know" is a valid answer — record it as an open question, do not push past it twice.
+3. Ask in rounds of **3 to 5 questions**. Every question comes with **answer options**: 3 to 5 specific, plausible answers drawn from this project, plus a way to type a custom one. "I don't know" is always one of the options — it is a valid answer, recorded as an open question, never pushed past twice. If your environment has a tool for multiple-choice questions, use it. Otherwise letter the options (a, b, c). Wait for answers before the next round. Stop after about 4 rounds, or earlier if the user says enough.
 4. Draft a **Product context** section in plain markdown. Show it to the user.
 5. **Stop and ask** before writing anything. Then add the section to AGENTS.md — or CLAUDE.md if that is what the project uses. If neither exists, create AGENTS.md. Never delete what is already there; if the section exists, update it.
 
@@ -58,6 +58,7 @@ One line per answer. This is context for an agent, not a business plan. If an an
 
 - Use a fixed questionnaire. Choose and phrase every question for this specific project.
 - Ask everything at once. Rounds of 3 to 5, then wait.
+- Ask open questions without options. The user picks or types; they never face a blank page.
 - Answer the questions for the user, or invent facts to fill gaps.
 - Overwrite or delete existing content in AGENTS.md or CLAUDE.md.
 - Give a verdict on the idea. That is `/roast`'s job. This skill records; it does not judge.
@@ -66,8 +67,17 @@ One line per answer. This is context for an agent, not a business plan. If an an
 
 > User: `/interview`
 >
-> Agent: *(reads README and code)* "This looks like an invoicing tool for freelancers. First round, three questions: 1) Who is the one freelancer you are building this for — what kind of work do they do? 2) What do they use today to send invoices, and what does it cost them? 3) Are you planning one-time pricing or a subscription, and why?"
+> Agent: *(reads README and code)* "This looks like an invoicing tool for freelancers. First round, three questions.
 >
-> User: *(answers, third answer is "not sure yet")*
+> 1) Who is the one freelancer you are building this for?
+>    a) designers  b) developers  c) writers  d) me — I need this  e) someone else
+>
+> 2) What do they use today to send invoices?
+>    a) Google Docs templates  b) a tool like FreshBooks  c) their accountant  d) I don't know  e) something else
+>
+> 3) One-time pricing or subscription?
+>    a) one-time  b) subscription  c) free with paid tier  d) I don't know yet"
+>
+> User: *(picks a, a, d)*
 >
 > Agent: *(two more rounds, then)* "Here is the Product context section I would add to AGENTS.md — pricing is listed under open questions. Want me to write it?"
