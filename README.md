@@ -8,7 +8,7 @@ Skill collections keep growing. 30 skills, personas, pipelines, voice triggers. 
 
 ## The idea
 
-fstack is 9 skills. Plain names, one job each.
+fstack is 10 skills. Plain names, one job each.
 
 The agent works in small steps and checks in with you. You approve; it executes. No long autonomous runs.
 
@@ -31,6 +31,7 @@ align → plan → build → check → ship
 Before the loop:
 
 - `/roast` — when you have a product idea and want honest pushback before writing code
+- `/interview` — when the agent should know the business behind the project; it asks, you answer, the answers land in AGENTS.md
 
 Sprinkle in anywhere:
 
@@ -39,12 +40,13 @@ Sprinkle in anywhere:
 
 Don't know where to start? `/fstack` is the front door. Describe what you want and it picks the right skill.
 
-## The 9 skills
+## The 10 skills
 
 | Skill | What it does |
 |---|---|
 | `/fstack` | The front door. Picks the right skill for your request. |
 | `/roast` | Stress-tests a product idea. Ends with a verdict and the smallest version worth building. |
+| `/interview` | Interviews you about the product — demand, customer, pricing, risks — and records the answers in AGENTS.md. |
 | `/align` | Asks up to 5 questions, then confirms a 3-line summary before any work starts. |
 | `/plan` | Writes a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/build` | Implements the plan one small step at a time, asking at real choices. |
