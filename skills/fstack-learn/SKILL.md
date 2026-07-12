@@ -9,7 +9,7 @@ Capture one lesson so the next session starts smarter.
 
 ## When to use
 
-- After `/fstack-ship` completes.
+- After `/fstack-push` completes.
 - When a bug had a non-obvious cause.
 - When a decision took longer than it should have.
 - When the user invokes `/fstack-learn`.

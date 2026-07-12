@@ -38,7 +38,7 @@ When there is no task, show this list:
 | `/fstack-check` | Review finished work: does it work, does it match the plan, is it simple. |
 | `/fstack-document` | Write docs/ for the project, ELI5 to deep. Run again to update them. |
 | `/fstack-learn` | Capture one lesson in three lines, so future sessions start smarter. |
-| `/fstack-ship` | Tests, commit, push, PR. Stops there — deploying is your call. |
+| `/fstack-push` | Commit any uncommitted work and push to the remote. Nothing else. |
 
 ## Routing map
 
@@ -55,7 +55,7 @@ When there is no task, show this list:
 | Work is done, needs review | `/fstack-check` |
 | Project needs docs, or the docs have gone stale | `/fstack-document` |
 | Something worth remembering just happened | `/fstack-learn` |
-| Reviewed and ready to go out | `/fstack-ship` |
+| Just want it committed and pushed | `/fstack-push` |
 
 ## Stop and ask
 

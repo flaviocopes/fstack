@@ -35,7 +35,7 @@ Quick pass with the `/fstack-simplify` smell list. If something smells, say so a
 
 End with one line:
 
-- **Ready to ship** — or —
+- **Ready to push** — or —
 - **Not ready: [reason]**
 
 **Stop and ask** the user what to do next. Do not fix what you found.
@@ -54,4 +54,4 @@ End with one line:
 >
 > **Is it simple?** `ThemeProvider` wrapper has one caller. Consider `/fstack-simplify` to drop it.
 >
-> **Ready to ship**
+> **Ready to push**
