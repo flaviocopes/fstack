@@ -1,6 +1,6 @@
 ---
 name: fstack-push
-description: Commit any uncommitted work and push it to the remote. Nothing else — no tests, no PR, no deploy. Use when you just want your changes saved and pushed.
+description: Commit any uncommitted work and push it to the remote. Nothing else — no tests, no deploy. Use when you just want your changes saved and pushed.
 ---
 
 # /fstack-push
@@ -20,7 +20,7 @@ Commit whatever is uncommitted, then push to the remote. That is the whole job.
 
 ## Must NOT
 
-- Run tests, open a PR, or deploy. This skill only commits and pushes.
+- Run tests or deploy. This skill only commits and pushes.
 - Force-push, or push to a different branch than the current one.
 - Skip hooks.
 - Amend commits that are already on the remote.

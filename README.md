@@ -59,7 +59,7 @@ Don't know where to start? `/fstack` is the front door. Describe what you want a
 | `/fstack-document` | Writes docs/ for the project, ELI5 to deep. Run again to update them with changes. |
 | `/fstack-check` | Three questions: does it work, does it match the plan, is it simple. |
 | `/fstack-learn` | Captures one lesson in three lines, so future sessions start smarter. |
-| `/fstack-push` | Commits any uncommitted work and pushes to the remote. Nothing else — no tests, no PR, no deploy. |
+| `/fstack-push` | Commits any uncommitted work and pushes to the remote. Nothing else — no tests, no deploy. |
 
 ## Philosophy
 
