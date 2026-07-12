@@ -16,8 +16,8 @@ The front door for fstack. Read what the user wants. Pick one skill. Run it. Sto
 ## Steps
 
 1. Read the user's request.
-2. **If there is no task** — the user typed `/fstack` alone, or just asked what fstack can do — list the ten skills with a one-line description each, then stop and ask what they want to do. Do not route or guess. This is the menu below.
-3. **If there is a task** — match it to one of the ten skills below.
+2. **If there is no task** — the user typed `/fstack` alone, or just asked what fstack can do — list the twelve skills with a one-line description each, then stop and ask what they want to do. Do not route or guess. This is the menu below.
+3. **If there is a task** — match it to one of the twelve skills below.
 4. Say which skill you picked and why, in one sentence.
 5. Run that skill. Do not chain others.
 
@@ -33,6 +33,8 @@ When there is no task, show this list:
 | `/fstack-plan` | Write a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/fstack-build` | Implement the plan one small step at a time, asking at real choices. |
 | `/fstack-simplify` | Audit a plan, diff, or file and propose deletions. Only deletions. |
+| `/fstack-deslop` | Sweep the whole codebase for slop and complexity, then remove it in approved batches. |
+| `/fstack-design` | Make UI match the project's existing styles and clean up design slop. |
 | `/fstack-counselors` | Ask the 3 most capable models the same question and synthesize one verdict. |
 | `/fstack-check` | Review finished work: does it work, does it match the plan, is it simple. |
 | `/fstack-learn` | Capture one lesson in three lines, so future sessions start smarter. |
@@ -47,7 +49,9 @@ When there is no task, show this list:
 | Vague or new idea for this project | `/fstack-nail` |
 | Idea is clear, no plan exists | `/fstack-plan` |
 | Plan exists and is approved | `/fstack-build` |
-| Feels bloated or too complex | `/fstack-simplify` |
+| Feels bloated or too complex (one file or diff) | `/fstack-simplify` |
+| Whole codebase feels bloated or sloppy | `/fstack-deslop` |
+| UI looks off or inconsistent with the rest | `/fstack-design` |
 | Big decision, one opinion is not enough | `/fstack-counselors` |
 | Work is done, needs review | `/fstack-check` |
 | Something worth remembering just happened | `/fstack-learn` |
@@ -70,7 +74,7 @@ If still ambiguous after the answer, route to `/fstack-nail`. That is what it is
 
 > User: `/fstack`
 >
-> Agent: *(lists the ten skills with one-line descriptions)* "That's the full set. What do you want to do?"
+> Agent: *(lists the twelve skills with one-line descriptions)* "That's the full set. What do you want to do?"
 
 > User: `/fstack I want to add dark mode to my site`
 >

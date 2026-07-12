@@ -8,7 +8,7 @@ Skill collections keep growing. 30 skills, personas, pipelines, voice triggers. 
 
 ## The idea
 
-fstack is 11 skills. Plain names, one job each.
+fstack is 13 skills. Plain names, one job each.
 
 The agent works in small steps and checks in with you. You approve; it executes. No long autonomous runs.
 
@@ -35,13 +35,15 @@ Before the loop:
 
 Sprinkle in anywhere:
 
-- `/fstack-simplify` — when something feels bloated
+- `/fstack-simplify` — when one file or diff feels bloated
+- `/fstack-deslop` — when the whole codebase needs a ruthless cleanup
+- `/fstack-design` — when UI looks off or inconsistent with the rest
 - `/fstack-learn` — when something is worth remembering
 - `/fstack-counselors` — when a decision is big enough to want three independent model opinions
 
 Don't know where to start? `/fstack` is the front door. Describe what you want and it picks the right skill.
 
-## The 11 skills
+## The 13 skills
 
 | Skill | What it does |
 |---|---|
@@ -53,6 +55,8 @@ Don't know where to start? `/fstack` is the front door. Describe what you want a
 | `/fstack-plan` | Writes a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/fstack-build` | Implements the plan one small step at a time, asking at real choices. |
 | `/fstack-simplify` | Audits a plan, diff, or file and proposes deletions. Only deletions. |
+| `/fstack-deslop` | Sweeps the whole codebase for slop and complexity, then removes it in approved batches. |
+| `/fstack-design` | Makes UI adhere to the project's existing styles and cleans up design slop. |
 | `/fstack-check` | Three questions: does it work, does it match the plan, is it simple. |
 | `/fstack-learn` | Captures one lesson in three lines, so future sessions start smarter. |
 | `/fstack-ship` | Tests, commit, push, PR. Stops there — deploying is your call. |
