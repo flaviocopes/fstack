@@ -17,12 +17,13 @@ A council of three models on one question. Each counselor answers independently,
 
 1. Turn the question into one **self-contained brief**: the question, the relevant context (files, constraints, what was already tried), and the answer format you want. Every counselor gets this exact brief and nothing else.
 2. Pick the council: the **3 most capable models available** in this environment. Tell the user who is on the council before dispatching. If the environment cannot mix models, run 3 independent sessions of the best one — independent runs still surface disagreement. If the environment cannot run independent agents at all, say so and answer directly. Never fake a council.
-3. Dispatch the same brief to each counselor, **in parallel and read-only**. No counselor sees another's answer.
-4. Read all three answers. Map where they agree and where they disagree.
-5. Deliver the result in two parts:
+3. Set the effort level. If the user asked for one, use it. If they did not, default to **medium / balanced** reasoning — good thinking without the full cost and latency. Raise it to the highest level only when the user says so or the question is clearly high-stakes.
+4. Dispatch the same brief to each counselor, **in parallel and read-only**. No counselor sees another's answer.
+5. Read all three answers. Map where they agree and where they disagree.
+6. Deliver the result in two parts:
    - **The verdict.** One definitive answer. When the counselors disagree, pick a side and say why — do not average.
    - **The council.** One summary per counselor, 2 to 3 lines each, model named. Flag every disagreement and how the verdict resolves it. A 2–1 split is reported as 2–1.
-6. **Stop.** Acting on the verdict is a separate decision. If the user wants to build, suggest `/plan` or `/build`.
+7. **Stop.** Acting on the verdict is a separate decision. If the user wants to build, suggest `/plan` or `/build`.
 
 ## Must NOT
 
