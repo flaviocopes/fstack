@@ -16,7 +16,7 @@ The front door for fstack. Read what the user wants. Pick one skill. Run it. Sto
 ## Steps
 
 1. Read the user's request.
-2. Match it to one of the nine skills below.
+2. Match it to one of the ten skills below.
 3. Say which skill you picked and why, in one sentence.
 4. Run that skill. Do not chain others.
 
@@ -30,6 +30,7 @@ The front door for fstack. Read what the user wants. Pick one skill. Run it. Sto
 | Idea is clear, no plan exists | `/plan` |
 | Plan exists and is approved | `/build` |
 | Feels bloated or too complex | `/simplify` |
+| Big decision, one opinion is not enough | `/counselors` |
 | Work is done, needs review | `/check` |
 | Something worth remembering just happened | `/learn` |
 | Reviewed and ready to go out | `/ship` |

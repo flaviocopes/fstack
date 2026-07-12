@@ -8,7 +8,7 @@ Skill collections keep growing. 30 skills, personas, pipelines, voice triggers. 
 
 ## The idea
 
-fstack is 10 skills. Plain names, one job each.
+fstack is 11 skills. Plain names, one job each.
 
 The agent works in small steps and checks in with you. You approve; it executes. No long autonomous runs.
 
@@ -37,16 +37,18 @@ Sprinkle in anywhere:
 
 - `/simplify` — when something feels bloated
 - `/learn` — when something is worth remembering
+- `/counselors` — when a decision is big enough to want three independent model opinions
 
 Don't know where to start? `/fstack` is the front door. Describe what you want and it picks the right skill.
 
-## The 10 skills
+## The 11 skills
 
 | Skill | What it does |
 |---|---|
 | `/fstack` | The front door. Picks the right skill for your request. |
 | `/roast` | Stress-tests a product idea. Ends with a verdict and the smallest version worth building. |
 | `/interview` | Interviews you about the product — demand, customer, pricing, risks — and records the answers in AGENTS.md. |
+| `/counselors` | Asks the 3 most capable models the same question, independently, and synthesizes one verdict plus each opinion. |
 | `/align` | Asks up to 5 questions, then confirms a 3-line summary before any work starts. |
 | `/plan` | Writes a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/build` | Implements the plan one small step at a time, asking at real choices. |
@@ -70,7 +72,7 @@ Don't know where to start? `/fstack` is the front door. Describe what you want a
 
 ## Credits
 
-fstack exists because of the stacks it distills. [gstack](https://github.com/garrytan/gstack) by Garry Tan gave it the full lifecycle idea and, through office hours, the idea-roasting step. [pstack](https://cursor.com/marketplace/cursor/pstack) by Lauren Tan gave it design-before-code and blast-radius thinking. [Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin) by Every gave it the plan artifact and the lesson-capture step. [Matt Pocock's skills](https://github.com/mattpocock/skills) gave it grilling, the two-axis review, and the small-skills shape. Go look at all four — they're generous, thoughtful work.
+fstack exists because of the stacks it distills. [gstack](https://github.com/garrytan/gstack) by Garry Tan gave it the full lifecycle idea and, through office hours, the idea-roasting step. [pstack](https://cursor.com/marketplace/cursor/pstack) by Lauren Tan gave it design-before-code and blast-radius thinking. [Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin) by Every gave it the plan artifact and the lesson-capture step. [Matt Pocock's skills](https://github.com/mattpocock/skills) gave it grilling, the two-axis review, and the small-skills shape. [counselors](https://github.com/aarondfrancis/counselors) by Aaron Francis gave it the council-of-advisors pattern behind `/counselors`. Go look at all of them — they're generous, thoughtful work.
 
 ## License
 
