@@ -35,9 +35,9 @@ Before the loop:
 
 Sprinkle in anywhere:
 
-- `/fstack-simplify` — when one file or diff feels bloated
-- `/fstack-deslop` — when the whole codebase needs a ruthless cleanup
+- `/fstack-simplify` — when something feels bloated, from one file to the whole codebase
 - `/fstack-design` — when UI looks off or inconsistent with the rest
+- `/fstack-document` — when the project needs docs, or the docs have gone stale
 - `/fstack-learn` — when something is worth remembering
 - `/fstack-counselors` — when a decision is big enough to want three independent model opinions
 
@@ -54,9 +54,9 @@ Don't know where to start? `/fstack` is the front door. Describe what you want a
 | `/fstack-nail` | Asks up to 5 questions, nails down a 3-line summary, gets your yes before any work starts. |
 | `/fstack-plan` | Writes a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/fstack-build` | Implements the plan one small step at a time, asking at real choices. |
-| `/fstack-simplify` | Audits a plan, diff, or file and proposes deletions. Only deletions. |
-| `/fstack-deslop` | Sweeps the whole codebase for slop and complexity, then removes it in approved batches. |
+| `/fstack-simplify` | Audits for unnecessary complexity and proposes deletions — one file or the whole codebase. Only deletions. |
 | `/fstack-design` | Makes UI adhere to the project's existing styles and cleans up design slop. |
+| `/fstack-document` | Writes docs/ for the project, ELI5 to deep. Run again to update them with changes. |
 | `/fstack-check` | Three questions: does it work, does it match the plan, is it simple. |
 | `/fstack-learn` | Captures one lesson in three lines, so future sessions start smarter. |
 | `/fstack-ship` | Tests, commit, push, PR. Stops there — deploying is your call. |

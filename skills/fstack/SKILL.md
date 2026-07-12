@@ -32,11 +32,11 @@ When there is no task, show this list:
 | `/fstack-nail` | Ask up to 5 questions, nail down a 3-line summary, get your yes before any work starts. |
 | `/fstack-plan` | Write a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/fstack-build` | Implement the plan one small step at a time, asking at real choices. |
-| `/fstack-simplify` | Audit a plan, diff, or file and propose deletions. Only deletions. |
-| `/fstack-deslop` | Sweep the whole codebase for slop and complexity, then remove it in approved batches. |
+| `/fstack-simplify` | Audit for unnecessary complexity and propose deletions — one file or the whole codebase. |
 | `/fstack-design` | Make UI match the project's existing styles and clean up design slop. |
 | `/fstack-counselors` | Ask the 3 most capable models the same question and synthesize one verdict. |
 | `/fstack-check` | Review finished work: does it work, does it match the plan, is it simple. |
+| `/fstack-document` | Write docs/ for the project, ELI5 to deep. Run again to update them. |
 | `/fstack-learn` | Capture one lesson in three lines, so future sessions start smarter. |
 | `/fstack-ship` | Tests, commit, push, PR. Stops there — deploying is your call. |
 
@@ -49,11 +49,11 @@ When there is no task, show this list:
 | Vague or new idea for this project | `/fstack-nail` |
 | Idea is clear, no plan exists | `/fstack-plan` |
 | Plan exists and is approved | `/fstack-build` |
-| Feels bloated or too complex (one file or diff) | `/fstack-simplify` |
-| Whole codebase feels bloated or sloppy | `/fstack-deslop` |
+| Feels bloated or sloppy — one file or the whole codebase | `/fstack-simplify` |
 | UI looks off or inconsistent with the rest | `/fstack-design` |
 | Big decision, one opinion is not enough | `/fstack-counselors` |
 | Work is done, needs review | `/fstack-check` |
+| Project needs docs, or the docs have gone stale | `/fstack-document` |
 | Something worth remembering just happened | `/fstack-learn` |
 | Reviewed and ready to go out | `/fstack-ship` |
 
