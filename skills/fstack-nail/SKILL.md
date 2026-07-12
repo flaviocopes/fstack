@@ -1,11 +1,11 @@
 ---
-name: align
-description: Clarify a non-trivial task before any work starts. Use at the start of new work, or when /fstack routes here because the idea is vague.
+name: fstack-nail
+description: Nail down a non-trivial task before any work starts. Ask questions, confirm a 3-line summary, then stop. Use at the start of new work, or when /fstack routes here because the idea is vague.
 ---
 
-# /align
+# /fstack-nail
 
-Make sure you understand the task before planning or coding. Ask a few plain questions. Get a confirmed summary. Stop there.
+Nail down the task before planning or coding. Ask a few plain questions. Get a confirmed summary. Stop there.
 
 ## When to use
 
@@ -44,4 +44,4 @@ The task is too big. Say so. Suggest splitting it into smaller tasks. Do not ask
 >
 > User: "Yes."
 >
-> Agent: *(stops. User can invoke `/plan` next.)*
+> Agent: *(stops. User can invoke `/fstack-plan` next.)*

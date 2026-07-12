@@ -1,18 +1,18 @@
 ---
-name: ship
-description: Run tests, commit, push, and open a PR for reviewed work. Use when /check said "Ready to ship" and the user wants the change out the door.
+name: fstack-ship
+description: Run tests, commit, push, and open a PR for reviewed work. Use when /fstack-check said "Ready to ship" and the user wants the change out the door.
 ---
 
-# /ship
+# /fstack-ship
 
 Get reviewed work out the door. Tests first, then commit, push, and PR.
 
 ## When to use
 
-- `/check` ended with "Ready to ship".
+- `/fstack-check` ended with "Ready to ship".
 - The user says to ship after a successful review.
 
-Do not ship if `/check` has not passed or the user has not confirmed.
+Do not ship if `/fstack-check` has not passed or the user has not confirmed.
 
 ## Steps
 
@@ -33,7 +33,7 @@ Do not ship if `/check` has not passed or the user has not confirmed.
    Use the summary from step 2 as the PR body.
    If the project does not use PRs, stop after the push.
 
-7. Suggest `/learn` if anything from this cycle is worth keeping.
+7. Suggest `/fstack-learn` if anything from this cycle is worth keeping.
 
 ## Must NOT
 
@@ -42,7 +42,7 @@ Do not ship if `/check` has not passed or the user has not confirmed.
 - Skip hooks.
 - Amend commits that are already on the remote.
 - Ship when tests fail.
-- Ship when `/check` has not said "Ready to ship".
+- Ship when `/fstack-check` has not said "Ready to ship".
 - Commit or push before the user approves the summary.
 
 ## Example
@@ -51,4 +51,4 @@ Do not ship if `/check` has not passed or the user has not confirmed.
 >
 > User: "Yes."
 >
-> Agent: "Committed, pushed, PR opened. Worth running `/learn` about the inline script fix?"
+> Agent: "Committed, pushed, PR opened. Worth running `/fstack-learn` about the inline script fix?"

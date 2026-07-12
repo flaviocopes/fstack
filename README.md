@@ -12,7 +12,7 @@ fstack is 11 skills. Plain names, one job each.
 
 The agent works in small steps and checks in with you. You approve; it executes. No long autonomous runs.
 
-One skill — `/simplify` — exists only to remove things. No other stack has that.
+One skill — `/fstack-simplify` — exists only to remove things. No other stack has that.
 
 ## Install
 
@@ -25,19 +25,19 @@ That's it. No dependencies, no build step, no config.
 ## The core loop
 
 ```
-align → plan → build → check → ship
+fstack-nail → fstack-plan → fstack-build → fstack-check → fstack-ship
 ```
 
 Before the loop:
 
-- `/roast` — when you have a product idea and want honest pushback before writing code
-- `/interview` — when the agent should know the business behind the project; it asks, you answer, the answers land in AGENTS.md
+- `/fstack-roast` — when you have a product idea and want honest pushback before writing code
+- `/fstack-interview` — when the agent should know the business behind the project; it asks, you answer, the answers land in AGENTS.md
 
 Sprinkle in anywhere:
 
-- `/simplify` — when something feels bloated
-- `/learn` — when something is worth remembering
-- `/counselors` — when a decision is big enough to want three independent model opinions
+- `/fstack-simplify` — when something feels bloated
+- `/fstack-learn` — when something is worth remembering
+- `/fstack-counselors` — when a decision is big enough to want three independent model opinions
 
 Don't know where to start? `/fstack` is the front door. Describe what you want and it picks the right skill.
 
@@ -46,16 +46,16 @@ Don't know where to start? `/fstack` is the front door. Describe what you want a
 | Skill | What it does |
 |---|---|
 | `/fstack` | The front door. Picks the right skill for your request. |
-| `/roast` | Stress-tests a product idea. Ends with a verdict and the smallest version worth building. |
-| `/interview` | Interviews you about the product — demand, customer, pricing, risks — and records the answers in AGENTS.md. |
-| `/counselors` | Asks the 3 most capable models the same question, independently, and synthesizes one verdict plus each opinion. |
-| `/align` | Asks up to 5 questions, then confirms a 3-line summary before any work starts. |
-| `/plan` | Writes a one-page plan with a mandatory "what we're NOT doing" section. |
-| `/build` | Implements the plan one small step at a time, asking at real choices. |
-| `/simplify` | Audits a plan, diff, or file and proposes deletions. Only deletions. |
-| `/check` | Three questions: does it work, does it match the plan, is it simple. |
-| `/learn` | Captures one lesson in three lines, so future sessions start smarter. |
-| `/ship` | Tests, commit, push, PR. Stops there — deploying is your call. |
+| `/fstack-roast` | Stress-tests a product idea. Ends with a verdict and the smallest version worth building. |
+| `/fstack-interview` | Interviews you about the product — demand, customer, pricing, risks — and records the answers in AGENTS.md. |
+| `/fstack-counselors` | Asks the 3 most capable models the same question, independently, and synthesizes one verdict plus each opinion. |
+| `/fstack-nail` | Asks up to 5 questions, nails down a 3-line summary, gets your yes before any work starts. |
+| `/fstack-plan` | Writes a one-page plan with a mandatory "what we're NOT doing" section. |
+| `/fstack-build` | Implements the plan one small step at a time, asking at real choices. |
+| `/fstack-simplify` | Audits a plan, diff, or file and proposes deletions. Only deletions. |
+| `/fstack-check` | Three questions: does it work, does it match the plan, is it simple. |
+| `/fstack-learn` | Captures one lesson in three lines, so future sessions start smarter. |
+| `/fstack-ship` | Tests, commit, push, PR. Stops there — deploying is your call. |
 
 ## Philosophy
 
@@ -72,7 +72,7 @@ Don't know where to start? `/fstack` is the front door. Describe what you want a
 
 ## Credits
 
-fstack exists because of the stacks it distills. [gstack](https://github.com/garrytan/gstack) by Garry Tan gave it the full lifecycle idea and, through office hours, the idea-roasting step. [pstack](https://cursor.com/marketplace/cursor/pstack) by Lauren Tan gave it design-before-code and blast-radius thinking. [Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin) by Every gave it the plan artifact and the lesson-capture step. [Matt Pocock's skills](https://github.com/mattpocock/skills) gave it grilling, the two-axis review, and the small-skills shape. [counselors](https://github.com/aarondfrancis/counselors) by Aaron Francis gave it the council-of-advisors pattern behind `/counselors`. Go look at all of them — they're generous, thoughtful work.
+fstack exists because of the stacks it distills. [gstack](https://github.com/garrytan/gstack) by Garry Tan gave it the full lifecycle idea and, through office hours, the idea-roasting step. [pstack](https://cursor.com/marketplace/cursor/pstack) by Lauren Tan gave it design-before-code and blast-radius thinking. [Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin) by Every gave it the plan artifact and the lesson-capture step. [Matt Pocock's skills](https://github.com/mattpocock/skills) gave it grilling, the two-axis review, and the small-skills shape. [counselors](https://github.com/aarondfrancis/fstack-counselors) by Aaron Francis gave it the council-of-advisors pattern behind `/fstack-counselors`. Go look at all of them — they're generous, thoughtful work.
 
 ## License
 

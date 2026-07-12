@@ -27,37 +27,37 @@ When there is no task, show this list:
 
 | Skill | What it does |
 |---|---|
-| `/roast` | Stress-test a product idea. Ends with a verdict and the smallest version worth building. |
-| `/interview` | Ask about the product — demand, customer, pricing, risks — and record the answers in AGENTS.md. |
-| `/align` | Ask up to 5 questions, then confirm a short summary before any work starts. |
-| `/plan` | Write a one-page plan with a mandatory "what we're NOT doing" section. |
-| `/build` | Implement the plan one small step at a time, asking at real choices. |
-| `/simplify` | Audit a plan, diff, or file and propose deletions. Only deletions. |
-| `/counselors` | Ask the 3 most capable models the same question and synthesize one verdict. |
-| `/check` | Review finished work: does it work, does it match the plan, is it simple. |
-| `/learn` | Capture one lesson in three lines, so future sessions start smarter. |
-| `/ship` | Tests, commit, push, PR. Stops there — deploying is your call. |
+| `/fstack-roast` | Stress-test a product idea. Ends with a verdict and the smallest version worth building. |
+| `/fstack-interview` | Ask about the product — demand, customer, pricing, risks — and record the answers in AGENTS.md. |
+| `/fstack-nail` | Ask up to 5 questions, nail down a 3-line summary, get your yes before any work starts. |
+| `/fstack-plan` | Write a one-page plan with a mandatory "what we're NOT doing" section. |
+| `/fstack-build` | Implement the plan one small step at a time, asking at real choices. |
+| `/fstack-simplify` | Audit a plan, diff, or file and propose deletions. Only deletions. |
+| `/fstack-counselors` | Ask the 3 most capable models the same question and synthesize one verdict. |
+| `/fstack-check` | Review finished work: does it work, does it match the plan, is it simple. |
+| `/fstack-learn` | Capture one lesson in three lines, so future sessions start smarter. |
+| `/fstack-ship` | Tests, commit, push, PR. Stops there — deploying is your call. |
 
 ## Routing map
 
 | Situation | Skill |
 |---|---|
-| Product idea, not sure it's worth building | `/roast` |
-| New project, the agent lacks business context | `/interview` |
-| Vague or new idea for this project | `/align` |
-| Idea is clear, no plan exists | `/plan` |
-| Plan exists and is approved | `/build` |
-| Feels bloated or too complex | `/simplify` |
-| Big decision, one opinion is not enough | `/counselors` |
-| Work is done, needs review | `/check` |
-| Something worth remembering just happened | `/learn` |
-| Reviewed and ready to go out | `/ship` |
+| Product idea, not sure it's worth building | `/fstack-roast` |
+| New project, the agent lacks business context | `/fstack-interview` |
+| Vague or new idea for this project | `/fstack-nail` |
+| Idea is clear, no plan exists | `/fstack-plan` |
+| Plan exists and is approved | `/fstack-build` |
+| Feels bloated or too complex | `/fstack-simplify` |
+| Big decision, one opinion is not enough | `/fstack-counselors` |
+| Work is done, needs review | `/fstack-check` |
+| Something worth remembering just happened | `/fstack-learn` |
+| Reviewed and ready to go out | `/fstack-ship` |
 
 ## Stop and ask
 
 If you truly cannot tell which skill fits, ask **one** clarifying question. Then route.
 
-If still ambiguous after the answer, route to `/align`. That is what it is for.
+If still ambiguous after the answer, route to `/fstack-nail`. That is what it is for.
 
 ## Must NOT
 
@@ -74,4 +74,4 @@ If still ambiguous after the answer, route to `/align`. That is what it is for.
 
 > User: `/fstack I want to add dark mode to my site`
 >
-> Agent: "This is a new feature with no plan yet, so I'll start with `/align` to make sure I understand what you want." *(runs /align)*
+> Agent: "This is a new feature with no plan yet, so I'll start with `/fstack-nail` to make sure I understand what you want." *(runs /fstack-nail)*

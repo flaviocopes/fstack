@@ -1,9 +1,9 @@
 ---
-name: interview
+name: fstack-interview
 description: Interview the user about the product behind the project and record the answers in AGENTS.md (or CLAUDE.md). Use when starting a project, or when the agent keeps guessing at business context it should already know.
 ---
 
-# /interview
+# /fstack-interview
 
 A structured interview about the product behind the code. The answers go into the project's agent context file, so every future session starts knowing what you are building, for whom, and why.
 
@@ -11,7 +11,7 @@ A structured interview about the product behind the code. The answers go into th
 
 - You are starting a new project.
 - The agent keeps making product guesses it should not have to make.
-- After `/roast`, when the verdict was to build.
+- After `/fstack-roast`, when the verdict was to build.
 
 ## Steps
 
@@ -61,11 +61,11 @@ One line per answer. This is context for an agent, not a business plan. If an an
 - Ask open questions without options. The user picks or types; they never face a blank page.
 - Answer the questions for the user, or invent facts to fill gaps.
 - Overwrite or delete existing content in AGENTS.md or CLAUDE.md.
-- Give a verdict on the idea. That is `/roast`'s job. This skill records; it does not judge.
+- Give a verdict on the idea. That is `/fstack-roast`'s job. This skill records; it does not judge.
 
 ## Example
 
-> User: `/interview`
+> User: `/fstack-interview`
 >
 > Agent: *(reads README and code)* "This looks like an invoicing tool for freelancers. First round, three questions.
 >

@@ -1,9 +1,9 @@
 ---
-name: roast
+name: fstack-roast
 description: Stress-test a product idea before any code gets written. Use when you have an idea and want honest pushback, or you are not sure something is worth building.
 ---
 
-# /roast
+# /fstack-roast
 
 Honest pushback on a product idea before anyone writes code. The goal is not to kill the idea. The goal is to find the smallest true version of it — or to save you months building a version nobody needs.
 
@@ -29,7 +29,7 @@ Honest pushback on a product idea before anyone writes code. The goal is not to 
    - **What is wishful.** The parts held up by hope. Say it plainly.
    - **The wedge.** The smallest version worth building. Shippable in days, not months.
 6. End with one verdict line: **Build the wedge**, **Shrink it**, or **Don't build it: [reason]**.
-7. **Stop and ask** what to do next. If building, suggest `/align` with the wedge as the task.
+7. **Stop and ask** what to do next. If building, suggest `/fstack-nail` with the wedge as the task.
 
 ## The principles it checks against
 
@@ -51,7 +51,7 @@ Honest pushback on a product idea before anyone writes code. The goal is not to 
 
 ## Example
 
-> User: `/roast` an app where AI generates personalized bedtime stories for kids
+> User: `/fstack-roast` an app where AI generates personalized bedtime stories for kids
 >
 > Agent: "Three questions.
 >
@@ -72,4 +72,4 @@ Honest pushback on a product idea before anyone writes code. The goal is not to 
 >
 > The wedge: one themed story pack on a one-page site, one-time price. No app, no accounts, no generation pipeline.
 >
-> **Shrink it.** Build the pack, show it to five parents. If three pay, `/align` the next slice."
+> **Shrink it.** Build the pack, show it to five parents. If three pay, `/fstack-nail` the next slice."

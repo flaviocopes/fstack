@@ -1,18 +1,18 @@
 ---
-name: learn
+name: fstack-learn
 description: Capture one lesson from recent work into LEARNED.md. Use after shipping, when something surprising happened, or when a non-obvious fix would save future time.
 ---
 
-# /learn
+# /fstack-learn
 
 Capture one lesson so the next session starts smarter.
 
 ## When to use
 
-- After `/ship` completes.
+- After `/fstack-ship` completes.
 - When a bug had a non-obvious cause.
 - When a decision took longer than it should have.
-- When the user invokes `/learn`.
+- When the user invokes `/fstack-learn`.
 
 ## Steps
 

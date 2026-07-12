@@ -1,9 +1,9 @@
 ---
-name: counselors
+name: fstack-counselors
 description: Ask the same question to the 3 most capable models available and synthesize their independent answers into one verdict. Use for decisions big enough to want more than one opinion.
 ---
 
-# /counselors
+# /fstack-counselors
 
 A council of three models on one question. Each counselor answers independently, then the answers get compared and resolved into one definitive recommendation — with each counselor's opinion summarized, especially where they disagree.
 
@@ -23,7 +23,7 @@ A council of three models on one question. Each counselor answers independently,
 6. Deliver the result in two parts:
    - **The verdict.** One definitive answer. When the counselors disagree, pick a side and say why — do not average.
    - **The council.** One summary per counselor, 2 to 3 lines each, model named. Flag every disagreement and how the verdict resolves it. A 2–1 split is reported as 2–1.
-7. **Stop.** Acting on the verdict is a separate decision. If the user wants to build, suggest `/plan` or `/build`.
+7. **Stop.** Acting on the verdict is a separate decision. If the user wants to build, suggest `/fstack-plan` or `/fstack-build`.
 
 ## Must NOT
 
@@ -35,7 +35,7 @@ A council of three models on one question. Each counselor answers independently,
 
 ## Example
 
-> User: `/counselors` should we move auth from server sessions to JWTs?
+> User: `/fstack-counselors` should we move auth from server sessions to JWTs?
 >
 > Agent: "Council: [the 3 strongest models available here]. Sending each the same brief: your auth code, the scaling constraint you mentioned, and the question. Back in a few minutes."
 >
@@ -53,4 +53,4 @@ A council of three models on one question. Each counselor answers independently,
 
 ## Credit
 
-This distills the council-of-advisors pattern from [counselors](https://github.com/aarondfrancis/counselors) by Aaron Francis. His CLI fans a prompt out to locally installed agent CLIs; this skill uses whatever your environment already has. If the `counselors` CLI is installed, it is a fine way to run the fan-out.
+This distills the council-of-advisors pattern from [counselors](https://github.com/aarondfrancis/fstack-counselors) by Aaron Francis. His CLI fans a prompt out to locally installed agent CLIs; this skill uses whatever your environment already has. If the `counselors` CLI is installed, it is a fine way to run the fan-out.

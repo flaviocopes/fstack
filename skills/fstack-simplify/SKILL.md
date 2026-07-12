@@ -1,16 +1,16 @@
 ---
-name: simplify
+name: fstack-simplify
 description: Audit a plan, diff, or file for unnecessary complexity and propose deletions. Use when something feels bloated, over-engineered, or harder than it should be.
 ---
 
-# /simplify
+# /fstack-simplify
 
 Audit a plan, diff, file, or folder for unnecessary complexity. Propose deletions and reductions only. Nothing gets applied without approval.
 
 ## When to use
 
-- The user invokes `/simplify` on a plan, diff, file, or folder.
-- `/check` spotted complexity and suggested running this skill.
+- The user invokes `/fstack-simplify` on a plan, diff, file, or folder.
+- `/fstack-check` spotted complexity and suggested running this skill.
 - Something feels bloated, over-engineered, or harder than it should be.
 
 ## Steps

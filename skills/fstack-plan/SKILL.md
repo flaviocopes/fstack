@@ -1,15 +1,15 @@
 ---
-name: plan
-description: Write a short PLAN.md the user approves before building. Use after /align confirms, or when the user asks for a plan and the idea is already clear.
+name: fstack-plan
+description: Write a short PLAN.md the user approves before building. Use after /fstack-nail confirms, or when the user asks for a plan and the idea is already clear.
 ---
 
-# /plan
+# /fstack-plan
 
 Turn confirmed understanding into a short written plan. The user approves it before any building starts.
 
 ## When to use
 
-- After `/align` confirms the summary.
+- After `/fstack-nail` confirms the summary.
 - The user asks for a plan and the idea is already clear.
 - `/fstack` routed here because there is no plan yet.
 
@@ -60,4 +60,4 @@ Mandatory. Never leave this empty. List tempting extras that are out of scope.
 >
 > User: "Approved."
 >
-> Agent: *(stops. User can invoke `/build` next.)*
+> Agent: *(stops. User can invoke `/fstack-build` next.)*

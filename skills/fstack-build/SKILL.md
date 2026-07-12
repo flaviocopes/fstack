@@ -1,9 +1,9 @@
 ---
-name: build
+name: fstack-build
 description: Execute an approved PLAN.md one step at a time. Use when the plan is approved and the user says to build.
 ---
 
-# /build
+# /fstack-build
 
 Implement the approved plan in small steps. Verify each step before moving on. Pause at real choices.
 

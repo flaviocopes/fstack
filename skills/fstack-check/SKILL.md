@@ -1,16 +1,16 @@
 ---
-name: check
-description: Review finished work with three questions before shipping. Use when work is done and needs review, or after /build finishes all plan steps.
+name: fstack-check
+description: Review finished work with three questions before shipping. Use when work is done and needs review, or after /fstack-build finishes all plan steps.
 ---
 
-# /check
+# /fstack-check
 
 Review finished work before shipping. Answer three questions with evidence. Report and stop. Do not fix anything.
 
 ## When to use
 
-- The user invokes `/check`.
-- `/build` finished all plan steps.
+- The user invokes `/fstack-check`.
+- `/fstack-build` finished all plan steps.
 - `/fstack` routed here because work is done and needs review.
 
 ## Steps
@@ -29,7 +29,7 @@ Then check blast radius. List what else this change could affect: callers, style
 
 ### 3. Is it simple?
 
-Quick pass with the `/simplify` smell list. If something smells, say so and suggest running `/simplify`. Do not run it automatically.
+Quick pass with the `/fstack-simplify` smell list. If something smells, say so and suggest running `/fstack-simplify`. Do not run it automatically.
 
 ## Verdict
 
@@ -52,6 +52,6 @@ End with one line:
 >
 > **Does it match the plan?** All 4 steps done. Nothing extra built. Blast radius: header component and global CSS — both look fine.
 >
-> **Is it simple?** `ThemeProvider` wrapper has one caller. Consider `/simplify` to drop it.
+> **Is it simple?** `ThemeProvider` wrapper has one caller. Consider `/fstack-simplify` to drop it.
 >
 > **Ready to ship**
