@@ -6,6 +6,8 @@ Agent skills that ask: can this be less?
 
 Skill collections keep growing. 30 skills, personas, pipelines, voice triggers. You can't hold that in your head, so you stop using it.
 
+And the complexity doesn't stay in the workflow. A process built to sound smart — phases, personas, ceremony — produces code that sounds smart too: layers, abstractions, and options nobody asked for.
+
 ## The idea
 
 fstack is 13 skills. Plain names, one job each.
