@@ -26,7 +26,7 @@ Implement the approved plan in small steps. Verify each step before moving on. P
 
 Pause when a step needs a decision that affects the rest of the work. Present the options in plain language. Say what you recommend and why. Wait for approval.
 
-If you discover work that is not in the plan, add it to `PLAN.md` and **stop and ask** before doing it.
+If you discover work that is not in the plan, propose the amendment and **stop and ask**. Add it to `PLAN.md` only after the user approves it.
 
 ## Must NOT
 

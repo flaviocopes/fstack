@@ -28,8 +28,11 @@ That's it. No dependencies, no build step, no config.
 
 ```mermaid
 flowchart TD
-    N["fstack-nail"] --> Task["Human approves the task"]
+    Start{"Human: task clear?"}
+    Start -->|No| N["fstack-nail"]
+    N --> Task["Human approves the task"]
     Task --> P["fstack-plan"]
+    Start -->|Yes| P
     P --> Plan["Human approves the plan"]
     Plan --> B["fstack-build"]
     B --> C["fstack-check"]
@@ -40,7 +43,7 @@ flowchart TD
     Earlier -.-> B
 ```
 
-You invoke each skill and decide when to move on.
+Invoke a skill directly, or ask `/fstack` to choose one. Nothing continues automatically.
 
 Before the loop:
 
@@ -55,15 +58,15 @@ Sprinkle in anywhere:
 - `/fstack-learn` — when something is worth remembering
 - `/fstack-counselors` — when a decision is big enough to want three independent model opinions
 
-Don't know where to start? `/fstack` is the front door. Describe what you want and it picks the right skill.
+Don't know where to start? `/fstack` is the front door.
 
 ```mermaid
 flowchart LR
     Map["Where each skill fits"]
     Map --> Front["Front door<br/>fstack"]
-    Map --> Before["Before building<br/>fstack-roast<br/>fstack-interview<br/>fstack-counselors"]
-    Map --> Core["Core loop<br/>fstack-nail<br/>fstack-plan<br/>fstack-build<br/>fstack-check<br/>fstack-push"]
-    Map --> Needed["Use when needed<br/>fstack-simplify<br/>fstack-design<br/>fstack-document"]
+    Map --> Before["Before building<br/>fstack-roast<br/>fstack-interview"]
+    Map --> Core["Core loop<br/>fstack-nail<br/>(when unclear)<br/>fstack-plan<br/>fstack-build<br/>fstack-check<br/>fstack-push"]
+    Map --> Needed["Use when needed<br/>fstack-simplify<br/>fstack-design<br/>fstack-document<br/>fstack-counselors"]
     Map --> After["After useful work<br/>fstack-learn"]
 ```
 
@@ -75,7 +78,7 @@ flowchart LR
 | `/fstack-roast` | Stress-tests a product idea. Ends with a verdict and the smallest version worth building. |
 | `/fstack-interview` | Interviews you about the product — demand, customer, pricing, risks — and records the answers in AGENTS.md. |
 | `/fstack-counselors` | Asks the 3 most capable models the same question, independently, and synthesizes one verdict plus each opinion. |
-| `/fstack-nail` | Asks up to 5 questions, nails down a 3-line summary, gets your yes before any work starts. |
+| `/fstack-nail` | Clarifies a vague task, nails down a 3-line summary, and gets your yes before planning. |
 | `/fstack-plan` | Writes a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/fstack-build` | Implements the plan one small step at a time, asking at real choices. |
 | `/fstack-simplify` | Audits for unnecessary complexity and proposes deletions — one file or the whole codebase. Only deletions. |
@@ -83,7 +86,7 @@ flowchart LR
 | `/fstack-document` | Writes docs/ for the project, ELI5 to deep. Run again to update them with changes. |
 | `/fstack-check` | Three questions: does it work, does it match the plan, is it simple. |
 | `/fstack-learn` | Captures one lesson in three lines, so future sessions start smarter. |
-| `/fstack-push` | Commits any uncommitted work and pushes to the remote. Nothing else — no tests, no deploy. |
+| `/fstack-push` | Commits the current task's changes and pushes to the remote. Nothing else — no tests, no deploy. |
 
 ## Philosophy
 

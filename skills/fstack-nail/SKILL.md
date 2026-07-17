@@ -1,6 +1,6 @@
 ---
 name: fstack-nail
-description: Nail down a non-trivial task before any work starts. Ask questions, confirm a 3-line summary, then stop. Use at the start of new work, or when /fstack routes here because the idea is vague.
+description: Nail down an unclear task before any work starts. Ask questions, confirm a 3-line summary, then stop. Use when the task is vague or /fstack routes here for clarification.
 ---
 
 # /fstack-nail
@@ -9,8 +9,8 @@ Nail down the task before planning or coding. Ask a few plain questions. Get a c
 
 ## When to use
 
-- Start of any non-trivial task.
-- `/fstack` routed here because the idea is vague or new.
+- The task is vague or has important unanswered questions.
+- `/fstack` routed here because the idea needs clarification.
 - The user wants to nail down what they mean before moving on.
 
 ## Steps

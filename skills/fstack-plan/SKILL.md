@@ -15,11 +15,12 @@ Turn confirmed understanding into a short written plan. The user approves it bef
 
 ## Steps
 
-1. Write or update `PLAN.md` in the project root.
-2. Use exactly four sections (see below). No other headings.
-3. Show the plan to the user.
-4. **Stop and ask** for approval. Do not implement until they approve.
-5. If any step feels big, split it or cut it. Do not nest sub-steps.
+1. If `/fstack-nail` produced a confirmed summary, use it as the basis for the plan. Do not reopen settled questions unless new evidence conflicts with it.
+2. Write or update `PLAN.md` in the project root.
+3. Use exactly four sections (see below). No other headings.
+4. Show the plan to the user.
+5. **Stop and ask** for approval. Do not implement until they approve.
+6. If any step feels big, split it or cut it. Do not nest sub-steps.
 
 ## PLAN.md format
 

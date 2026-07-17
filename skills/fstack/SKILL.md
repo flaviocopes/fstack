@@ -29,7 +29,7 @@ When there is no task, show this list:
 |---|---|
 | `/fstack-roast` | Stress-test a product idea. Ends with a verdict and the smallest version worth building. |
 | `/fstack-interview` | Ask about the product — demand, customer, pricing, risks — and record the answers in AGENTS.md. |
-| `/fstack-nail` | Ask up to 5 questions, nail down a 3-line summary, get your yes before any work starts. |
+| `/fstack-nail` | Clarify a vague task, nail down a 3-line summary, and get your yes before planning. |
 | `/fstack-plan` | Write a one-page plan with a mandatory "what we're NOT doing" section. |
 | `/fstack-build` | Implement the plan one small step at a time, asking at real choices. |
 | `/fstack-simplify` | Audit for unnecessary complexity and propose deletions — one file or the whole codebase. |
@@ -38,7 +38,7 @@ When there is no task, show this list:
 | `/fstack-check` | Review finished work: does it work, does it match the plan, is it simple. |
 | `/fstack-document` | Write docs/ for the project, ELI5 to deep. Run again to update them. |
 | `/fstack-learn` | Capture one lesson in three lines, so future sessions start smarter. |
-| `/fstack-push` | Commit any uncommitted work and push to the remote. Nothing else. |
+| `/fstack-push` | Commit the current task's changes and push to the remote. Nothing else. |
 
 ## Routing map
 
@@ -46,7 +46,7 @@ When there is no task, show this list:
 |---|---|
 | Product idea, not sure it's worth building | `/fstack-roast` |
 | New project, the agent lacks business context | `/fstack-interview` |
-| Vague or new idea for this project | `/fstack-nail` |
+| Vague or unclear task | `/fstack-nail` |
 | Idea is clear, no plan exists | `/fstack-plan` |
 | Plan exists and is approved | `/fstack-build` |
 | Feels bloated or sloppy — one file or the whole codebase | `/fstack-simplify` |
@@ -78,4 +78,4 @@ If still ambiguous after the answer, route to `/fstack-nail`. That is what it is
 
 > User: `/fstack I want to add dark mode to my site`
 >
-> Agent: "This is a new feature with no plan yet, so I'll start with `/fstack-nail` to make sure I understand what you want." *(runs /fstack-nail)*
+> Agent: "This leaves important choices open, so I'll start with `/fstack-nail` to make sure I understand what you want." *(runs /fstack-nail)*
