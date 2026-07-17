@@ -26,9 +26,21 @@ That's it. No dependencies, no build step, no config.
 
 ## The core loop
 
+```mermaid
+flowchart TD
+    N["fstack-nail"] --> Task["Human approves the task"]
+    Task --> P["fstack-plan"]
+    P --> Plan["Human approves the plan"]
+    Plan --> B["fstack-build"]
+    B --> C["fstack-check"]
+    C -->|Ready to push| Push["fstack-push"]
+    C -->|Not ready| Earlier["Human picks the right earlier step"]
+    Earlier -.-> N
+    Earlier -.-> P
+    Earlier -.-> B
 ```
-fstack-nail → fstack-plan → fstack-build → fstack-check → fstack-push
-```
+
+You invoke each skill and decide when to move on.
 
 Before the loop:
 
@@ -44,6 +56,16 @@ Sprinkle in anywhere:
 - `/fstack-counselors` — when a decision is big enough to want three independent model opinions
 
 Don't know where to start? `/fstack` is the front door. Describe what you want and it picks the right skill.
+
+```mermaid
+flowchart LR
+    Map["Where each skill fits"]
+    Map --> Front["Front door<br/>fstack"]
+    Map --> Before["Before building<br/>fstack-roast<br/>fstack-interview<br/>fstack-counselors"]
+    Map --> Core["Core loop<br/>fstack-nail<br/>fstack-plan<br/>fstack-build<br/>fstack-check<br/>fstack-push"]
+    Map --> Needed["Use when needed<br/>fstack-simplify<br/>fstack-design<br/>fstack-document"]
+    Map --> After["After useful work<br/>fstack-learn"]
+```
 
 ## The 13 skills
 
